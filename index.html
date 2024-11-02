@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأبيات الشعرية</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            line-height: 2;
+        }
+        .poem {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
 
+    <h1>الأبيات الشعرية</h1>
+    <div class="poem">
+        <p>عبرتُ دروب العلم بحثًا عن اليقين</p>
+        <p>بنوره تجلت رؤى العالمين</p>
+        <p>دروب المجد تزهر في خطى المتقين</p>
+        <p>السعي يعانق طموح الراغبين</p>
+        <p>ماضون نحو الخير رغم الصعاب</p>
+        <p>حقائق العمر تبنى على صبر الشباب</p>
+        <p>سبل النجاح تنادي بجهد وعطاء</p>
+        <p>نحيا بها للأمل وننسى العناء</p>
+    </div>
+
+    <input type="text" id="answer" placeholder="اكتب إجابتك هنا">
+    <br>
+    <button onclick="submitAnswer()">أرسل</button>
+
+    <script>
+        function submitAnswer() {
+            const answer = document.getElementById("answer").value;
+            const email = "brazdamiwr@outlook.com"; // ضع بريدك الإلكتروني هنا
+            const subject = "إجابة على الأبيات الشعرية";
+            const body = "الإجابة: " + answer;
+
+            window.open(`mailto:${email}?subject=${subject}&body=${body}`);
+        }
+    </script>
+
+</body>
+</html>
